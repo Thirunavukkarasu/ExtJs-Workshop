@@ -20,22 +20,25 @@ Ext.app.Application has following features:
 Ext.application({
     name : 'extjs-workspace',
     launch : function(){
-    Ext.define('MyApp.model.Person', {
-        extend: 'Ext.data.Model',
-        proxy: { 
-            type: 'ajax',
-            url: 'data.json'
+   Ext.create('Ext.panel.Panel', {
+
+    layout: 'vbox',
+    items: [{
+        xtype: 'button',
+        text: 'Button',
+        handler: function(button){
+            alert('You clicked the button!');
         }
-    });
-    Ext.create('Ext.data.Store', {
-        model: 'MyApp.model.Person',
-        autoLoad: true,
-        listeners: {
-            load: function(store) {
-                Ext.Msg.alert('Awesome!', store.getCount() + ' records were fetched.');
-            }
-        }
-    });
+    }],
+
+    title : 'My Panel',
+    height: 200,
+    width: 300,
+    bodyPadding: 8,
+    border: true,
+    renderTo : Ext.getBody()
+});
+
 
         
     }

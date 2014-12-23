@@ -20,26 +20,30 @@ Ext.app.Application has following features:
 Ext.application({
     name : 'extjs-workspace',
     launch : function(){
-    Ext.create('Ext.panel.Panel', {
-    
-        layout: 'vbox',
-        items: [{
-            xtype: 'button',
-            margin: 8,
-            text: 'Button'
-        }, {
-            xtype: 'button',
-            margin: 8,
-            text: 'Button'
-        }],
-    
-        title: 'My Panel',
-        height: 200,
-        width: 300,
-        bodyPadding: 8,
-        border: true,
-        renderTo: Ext.getBody()
-    });
+Ext.create('Ext.window.Window', {
+
+    layout: 'vbox',
+    items: [{
+        xtype: 'button',
+        margin: 8,
+        text: 'Button'
+    },{
+        xtype: 'button',
+        margin: 8,
+        text: 'Button'
+    }],
+
+    title : 'My Window',
+    autoShow: true,
+    height: 200,
+    width: 300,
+    x: 1, 
+    y: 1,
+    bodyPadding: 8,
+    renderTo : Ext.getBody()
+});
+
+
         
     }
 });

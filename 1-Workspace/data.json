@@ -1,3 +1,6 @@
-[
-  {"Hello"},
-  {"World!"}]
+{
+  [
+  {"first":"Hello"},
+  {"first":"World!"}
+ ]
+}

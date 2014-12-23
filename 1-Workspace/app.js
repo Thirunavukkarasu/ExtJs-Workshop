@@ -21,21 +21,5 @@ Ext.application({
     name : 'extjs-workspace',
     launch : function(){
         //alert("Uh! Workspace setup completed :) !");
-        Ext.define('MyApp.model.Person', {
-            extend: 'Ext.data.Model',
-            proxy: { 
-                type: 'ajax',
-                url: 'data.json'
-            }
-        });
-        Ext.create('Ext.data.Store', {
-            model: 'MyApp.model.Person',
-            autoLoad: true,
-            listeners: {
-                load: function(store) {
-                    Ext.Msg.alert('The Beatles', store.getCount() + ' records were fetched.');
-                }
-            }
-        });
     }
 });

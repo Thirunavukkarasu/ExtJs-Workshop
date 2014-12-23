@@ -26,7 +26,7 @@ Ext.application({
     items: [{
         xtype: 'button',
         text: 'Button',
-        handler: function(button){
+        click: function(button){
             alert('You clicked the button!');
         }
     }],

@@ -20,6 +20,12 @@ Ext.app.Application has following features:
 Ext.application({
     name : 'extjs-workspace',
     launch : function(){
-        alert("Uh! Workspace setup completed :) !");
+         Ext.create('Ext.panel.Panel', {
+        title : 'My Panel',
+        height: 200,
+        width: 300,
+        border: true,
+        renderTo : Ext.getBody()
+    });
     }
 });

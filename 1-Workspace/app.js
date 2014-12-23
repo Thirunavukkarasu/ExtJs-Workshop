@@ -20,6 +20,6 @@ Ext.app.Application has following features:
 Ext.application({
     name : 'extjs-workspace',
     launch : function(){
-        //alert("Uh! Workspace setup completed :) !");
+        alert("Uh! Workspace setup completed :) !");
     }
 });

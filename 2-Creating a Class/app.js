@@ -2,7 +2,7 @@ Ext.application({
     name : 'extjs-development',
     launch : function(){
         
- /*       Ext.define('Runner', 
+    Ext.define('Runner', 
         {
             name : 'Usian Bolt',
             getRunnerName : function(){
@@ -13,8 +13,6 @@ Ext.application({
         });
         
         var runnerObject = Ext.create('Runner');
-        console.log(runnerObject.getRunnerName());*/
-        
-        alert("Workspace Loaded successfully!")
+        console.log(runnerObject.getRunnerName());
     }
 });
